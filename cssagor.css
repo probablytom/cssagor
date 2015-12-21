@@ -46,19 +46,24 @@ html {
 
 @media (max-width: 786px) {
   html {
-    font-size: 12px
+    font-size: 1em
   }
+
+  body {
+    margin: 2em auto
+  }
+}
+
+@media (min-width: 786px) {
+	hr {
+		width: 40em;
+		align: center;
+	}
 }
 
 *, *:after, *:before, input {
   font-family: inherit;
   box-sizing: inherit
-}
-
-@media (max-width: 786px) {
-  body {
-    margin: 2em auto
-  }
 }
 
 h1, h2 {
@@ -91,9 +96,4 @@ p, ol, dl, ul, li {
   font-size: 18px;
   margin-top: 1.3em;
   margin-bottom: 1.3em;
-}
-
-hr {
-	width: 40em;
-  align: center;
 }
