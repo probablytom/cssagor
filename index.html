@@ -1,93 +1,68 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Tom Wallis</title>
+    <link rel="stylesheet" href="tufte.css"/>
+    <script src="google-analytics.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
-	<title>Tom Wallis personal site</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic' rel='stylesheet' type='text/css'>
-	<!--
-    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="et-book.css"/>
-    -->
-	<link rel="stylesheet" type="text/css" href="cssagor.css"/>
-	<script src="google-analytics.js"></script>
-
-</head>
 <body>
 
 <h1>Tom Wallis</h1>
-<h2>
-	A computer science student in the 4th year of his MSci program at Glasgow University.
-</h2><br/><br/><hr/>
-<a href="cv.pdf">Click here to download my CV, which contains a brief overview of my work and what my interests are, as well as contact details</a>.<br/>
+<p class="subtitle">
+  A Computing Science Masters student at Glasgow University
+</p>
+<!--<br/><br/><hr/>-->
+<!--<a href="cv.pdf">Click here to download my CV, which contains a brief overview of my work and what my interests are, as well as contact details</a>.<br/>
 For detailled information on my working life, please see my <a href="hiring.html">hiring page</a>.<br/><br/>
-<hr/><br/>
+<hr/><br/>-->
 
-<p class="category">What Tom does when he's working</p>
-<ul>
-	<li>
-		<p class="descriptor">4th Year University Student</p>
-		<ul><li>I'm a student in my 4th year of Computer Science at Glasgow University.</br>My classes include Artificial Intelligence, Constraint Programming, Cyber Security and my fourth year of Algorithmics.<br/>My honours year dissertation was on sociotechnical modelling -- I plan on doing this for my masters thesis, too.</li></ul>
-	</li>
-	<li>
-		<p class="descriptor">Lab Demonstrator</p>
-		<ul>
-			<li>I demonstrate lab sessions for team projects (practical professional software development) and Java and object oriented programming sessions.</li>
-		</ul>
-	</li>
-	<li>
-		<p class="descriptor">High school teaching assistant</p>
-		<ul><li>As a part of my studies, I spend time teaching in a local high school, mostly with National 5, Higher and Advanced Higher classes.</br>In the school, I act as a classroom assistant and give talks and workshops on different programming and computer science fundamentals.</li></ul>
-	</li>
-	<li>
-		<a href="http://github.com/probablytom/behaviour-modelling" class="descriptor">Fuzzi Moss</a>
-		<ul><li>A still-developed offshoot from my honours dissertation. This is a library for introucing faults into sociotechnical models. </li>
-			<li>This model is composed of two parts:
-				<ul>
-					<li>A sociotechnical modelling system, in raw python, that focuses on workflows in a pragmatic way</li>
-					<li>A mutation library that intercepts python function execution, recompiles the source code with safe and infinitely powerful alterations, and executes a slightly altered version of the mutant.<br/>This has the effect of running a different version of a function every time the funtion is executed, something I haven't found in any other mutation library.</li>
-				</ul>
+<section id="working">
+  <h2>Research</h2>
+  <h3>Computational Responsibility</h3>
+  <p>
+  As a masters student I spend most of my time doing research. This year, I'm developing a computational model for responsibility<span class="marginnote">Related work would be Marsh's early computational model of Trust, some of which has inspired my own model. You can read the paper on it <a href="http://www.cs.stir.ac.uk/research/publications/techreps/pdf/TR133.pdf">here</a>.</span>. The idea is to formalise what responsibility is, as well as what it means for an agent to be responsible, and to use that formalism to create agents which exhibit properties of responsibility. I am looking to further this research as a PhD project in October 2017 -- possibly creating a more complete model, possibly attempting to solve some of the problems in moral responsibility and machine ethics that it causes, or possibly to apply the model alongside other anthopomorphic algorithms. <span class="marginnote">Applications of the model could be more advanced security systems through social reactions to the actions of other agents, creation of friendly AI by limiting their space of minds, and other things.</span>
+  </p>
+  <h3>Sociotechnical modelling</h3>
+  <p>
+  <span class="marginnote">This project is still in development; a current version can be found <a href="https://github.com/twsswt/fuzzi-moss">here</a>.</span>In the past, my research has been on sociotechnical systems analysis. With Tim Storer at Glasgow University, I developed a system called <em>Fuzzi Moss</em>, a code mutation library which replaced functions in Python programs with versions of the original which executed random mutations when called. Together with a semantics system for developing workflow models from UML activity diagrams which I also developed, the project simulated human workers in an arbitrary environment and injected human-like faults into that system, to create simple workflow models with human-like variance. <span class="marginnote">The project was awarded an A2, and won the prize for <em>best software product</em>.</span><span class="marginnote">An in-progress paper on the work can be found <a href="https://github.com/probablytom/fuzzi-moss-paper">here</a>.</span>
+  </p>
+  <h2>Consulting</h2>
+  <p>
+  Outside of university, I am also a part-time consultant for project mangement and python software development. I'm currently working remotely with a fintech startup in London, EC2. I'm always available to chat or to do some remote work; if you're interested in hiring me, please strike up a conversation by emailling <a href="mailto:work@tomwallis.net">work-at-tomwallis-dot-net</a>.
+  </p>
+</section>
 
-			</li>
-			<li>This is still under active development, with <a href="http://www.dcs.gla.ac.uk/~tws/">Tim Storer</a> at Glasgow University. We've just finished a paper on what's been done so far, and it's been submitted for review. Watch this space!</li>
-		</ul>
-	</li>
-</ul>
+<section id="not_working">
+  <h2>Side Projects</h2><p><span class="marginnote">Personal projects I update when university and work don't take over</span></p>
+  <h3>Project Albert</h3>
+  <p><span class="marginnote">The Project Albert homepage can be found <a href="http://projectalbert.net/">here</a>.</span>
+  Project Albert is a research project in experimental storytelling. Specifically, it is an attempt to simplify the improvisation of children's bedtime stories, for parents and carers who do not necessarily have improvisation training. Albert achieves this by breaking down the structure and properties of the improvised story into simple rules, called design patterns. <span class="marginnote">An in-progress essay on Project Albert can be found <a href="https://github.com/probablytom/Albert-paper">here</a>.</span>Using design patterns, it remains simple while becoming as complex or involved as the storyteller requires, without becoming difficult to create or difficult for the audience to understand. A full suite of design patterns have been produced, and sample stories using the patterns made available on its <a href="http://projectalbert.net/">homepage</a>.
+  </p>
+  <h3>Design Patterns for Piracy Detection</h3>
+  <p>
+  <span class="marginnote">The homepage for the project, detailling all of the patterns, can be found <a href="http://tomwallis.net/CREATe-Hackathon/">here</a></span>
+  Developed at the <a href="http://www.create.ac.uk">CREATe hackathon 2016</a>, this project developed a series of design patterns which could be used to help in data analysis to detect piracy, and to detect negative and illegal activity online. It was used to graph connections between torrent networks and social networks using data provided by the University of Glasgow and CREATe.
+  </p>
+</section>
 
-<p class="category">What Tom does when he isn't working</p>
-<ul>
-	<li>
-		<a href="http://projectalbert.net" class="descriptor">Project Albert</a>
-		<ul>
-			<li>A project for simplifying improvising stories using software engineering techniques, particularly childrens' bedtime stories. <br/>A proof of concept of using design patterns to bridge lessons we learn from science and arts, which is still under development.</li>
-		</ul>
-	</li>
-
-	<li>
-		<a href="http://github.com/probablytom/music-organiser" class="descriptor">Music Organiser</a>
-		<ul>
-			<li>A script to fix the shortcomings I found in a solution to a similar problem <a href="https://github.com/bamos/python-scripts/blob/master/python2.7/music-organizer.py">by @bamos on GitHub</a>. <br/>Organises music based on a handful of tags, by searching files for metadata, and produces a filesystem structure defined by the user.<br/><br/>For example, you might want your music library reorganised so that tracks which are numbered are put into albums, which are put into folders for each artist, which are then sorted by genre. The parameter --struture=genre/artist/album/track+title would do the trick.<br/>This is still under active development. Feel free to contribute!</li>
-		</ul>
-	</li>
-	<li>
-		<a href="http://tomwallis.net/CREATe-Hackathon/" class="descriptor">Design Patterns for Piracy Detection</a>
-		<ul>
-			<li>
-				A project for developing a set of design patterns, which can be used to identify within large datasets piracy and interactions driving potentially negative or illegal activity online. Used to graph connections between torrent networks and online networks using data provided by the University of Glasgow, at the <a href="http://create.ac.uk/">CREATe Hackathon</a> in May 2016.
-			</li>
-		</ul>
-	</li>
-</ul>
-
-
-<p class="category">What Tom does when he thinks nobody's watching</p>
-<ul>
-	<li>
-		<a href="http://blog.tomwallis.net" class="descriptor">Personal Blog</a>
-		<ul>
-			<li>My personal blog. Mostly I write about etymology, coffee, fountain pens, and other things that interest me.
-			</li>
-		</ul>
-	</li>
-</ul>
+<section id="curiosities">
+  <h2>Curiosities</h2><p><span class="marginnote">Things I'm interested in but not currently actively working on</span></p>
+  <h3>Literate Programming via markdown</h3>
+  <p>
+  Literate Programming<span class="marginnote">A technique by Donald Knuth. Read more <a href="https://en.wikipedia.org/wiki/Literate_programming">here</a></span> is a technique to develop readable, self-documenting code by having the code interspersed through documentation which describes it. While I believe the approach has some flaws for some use cases, it's a fascinating idea, particularly as a tool for education. Being able to hand out a document which can be executed, and seeing the code being written as it's being described, is a clever way to introduce source code to aspiring programmers. I've written a small Python library which performs ordinary Markdown compilation, but when it approaches code blocks, can execute the code and replace the block with what the code returns. While the project is written in Python, it is designed on a plugin architecture allowing multiple languages to be evaluated.<span class="marginnote">You can find the source code for the project <a href="https://github.com/probablytom/dynamic-markdown">here</a></span> The project has some bugs -- particularly involving global Python environment when inserting evaluated Python code -- but is meant as a proof of concept for markdown-based literate programming for any language.
+  </p>
+  <h3>Organsim Calculus</h3>
+  <p>
+  Organism Calculus is an idea which tried to generalise the mathematics underlying evolutionary theory as it pertains to any fundamental units which come together to create emergant phenomena in the form of an organism. An example of this is economics, where individual people and technologies interface together to produce one larger company which appears to make decisions "of its own". Similarly, companies interact in ways which indicate their own cellular interaction within markets: some forms of hostile takeover being analogous to the operation of a macrophage consuming a bacterium. Similar behaviours can be found in algorithm interactions, sociotechnical systems, politics, artificial intelligence and more. <span class="marginnote">Of particular interest is applying this work to the study of ideas and their spread, as ideas spreading like genes was <a href="https://www.amazon.co.uk/Selfish-Gene-Richard-Dawkins/dp/0192860925">Dawkins' original definition of a Meme</a>. When the spread of ideas is taken in this light, culture might be defined as a person's memetic "genome". <a href="http://jom-emit.cfpm.org/2000/vol4/kendal_jr&laland_kn.html">Some work touching on this idea has already been attempted.</a></span>I am aware that some work in economics and genetics is being done to mathematically formalise what the gene-like components of their respective organisms produce in terms of emergant phenomena; however, my proposal is to generalise the behaviour of self-reproducing fundamental units (gene-like systems) and to define how (and potentially what) their emergant phenomena might be. I'm also interested in exploring the philosophical implications of this work; particularly as it relates to modelling catastrophic failure of civilisation-critical problems, like AI safety, global political collapse, and other existential risks.
+  </p>
+  <h3>Server management</h3>
+  <p>
+  I quite enjoy managing linux servers in my spare time. I write my code in Vim, and a version of this site is served on <a href="http://tom.coffee/">http://tom.coffee/</a> from a Dell T20 in my bedroom. Personal server management is an interesting hobby -- particularly as one realises the complexities that would prevent the layperson from operating their own server. Owning one's own server, and understanding some basic technologies one can run on it can have lots of benefits the ordinary person would benefit from. For example, a small home server might allow a person to operate a VPN, keeping their traffic encrypted on unsafe open networks when in public. A family might want to run a media server to host various books and films that they've accumulated over the years -- not unlike a regular family's bookcase today. However, running these servers is difficult, and most families simply pick up a Netflix subscription instead. I'm interested in learning about server management, so that I might contribute back to the layperson community in the future.
+  </p>
+</section>
 
 </body>
 </html>
